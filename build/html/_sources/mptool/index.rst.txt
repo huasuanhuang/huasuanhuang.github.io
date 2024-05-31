@@ -1,6 +1,0 @@
-========
-CIF Tool
-========
-
-CIF Tool可以通过筛选搜索获取Materials Project中的结构数据，
-并可一键保存搜索得到的结构对应的cif文件
