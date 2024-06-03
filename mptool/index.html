@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>数据查询 &mdash; Notes 0.1.0 文档</title>
+  <title>CIF Tool &mdash; Notes 0.1.0 文档</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="输入构建" href="4.03_construct.html" />
-    <link rel="prev" title="文件下载" href="4.01_download.html" /> 
+    <link rel="next" title="n2p2 Tool" href="../n2p2tool/index.html" />
+    <link rel="prev" title="MView" href="../mview/index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,22 +47,10 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../vaspview/index.html">VASP View</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../mptool/index.html">CIF Tool</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mview/index.html">MView</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">CIF Tool</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../n2p2tool/index.html">n2p2 Tool</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">网页版工具</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="4.01_download.html">文件下载</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">数据查询</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">带隙查询</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">生成焓查询</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id4">弹性模量查询</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id5">介电常数查询</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">杂质扩散活化能查询</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="4.03_construct.html">输入构建</a></li>
-<li class="toctree-l2"><a class="reference internal" href="4.04_unit_conversion.html">单位转换</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../web/index.html">网页版工具</a></li>
 </ul>
 
         </div>
@@ -79,10 +67,9 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">网页版工具</a></li>
-      <li class="breadcrumb-item active">数据查询</li>
+      <li class="breadcrumb-item active">CIF Tool</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/web/4.02_query.rst.txt" rel="nofollow"> 查看页面源码</a>
+            <a href="../_sources/mptool/index.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -90,41 +77,19 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="id1">
-<h1>数据查询<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<section id="id2">
-<h2>带隙查询<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>网址：</p>
-<p>包含6354个无机晶体结构的带隙数据。</p>
-</section>
-<section id="id3">
-<h2>生成焓查询<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>网址：</p>
-<p>包含1276个合金的生成焓数据。</p>
-</section>
-<section id="id4">
-<h2>弹性模量查询<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
-<p>网址：</p>
-<p>包含1181个无机晶体结构的剪切模量、体积模量、泊松比等数据。</p>
-</section>
-<section id="id5">
-<h2>介电常数查询<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
-<p>网址：</p>
-<p>包含1296个无机晶体结构的介电常数数据以及电子贡献部分。</p>
-</section>
-<section id="id6">
-<h2>杂质扩散活化能查询<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
-<p>网址：</p>
-<p>Fe,Co,Ni,Cu,Ag,Au六种FCC金属晶体中的加入杂质原子后杂质原子的扩散活化能数据。</p>
-</section>
+  <section id="cif-tool">
+<h1>CIF Tool<a class="headerlink" href="#cif-tool" title="Link to this heading"></a></h1>
+<p>下载地址：</p>
+<p>CIF Tool可以通过筛选搜索获取Materials Project中的结构数据，
+并可一键保存搜索得到的结构对应的cif文件</p>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="4.01_download.html" class="btn btn-neutral float-left" title="文件下载" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="4.03_construct.html" class="btn btn-neutral float-right" title="输入构建" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../mview/index.html" class="btn btn-neutral float-left" title="MView" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="../n2p2tool/index.html" class="btn btn-neutral float-right" title="n2p2 Tool" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
