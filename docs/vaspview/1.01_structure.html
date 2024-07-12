@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>VASP View &mdash; 华算工具箱 0.1.0 文档</title>
+  <title>结构设置 &mdash; 华算工具箱 0.1.0 文档</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -22,8 +22,8 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="结构设置" href="1.01_structure.html" />
-    <link rel="prev" title="华算科研工具箱使用文档" href="../index.html" /> 
+    <link rel="next" title="优化结果" href="1.02_optimization.html" />
+    <link rel="prev" title="VASP View" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,8 +46,15 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">VASP View</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html">结构设置</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">VASP View</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">结构设置</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">创建结构</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">导入结构</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">调整结构</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">结构输出</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id6">批量转换</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="1.02_optimization.html">优化结果</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.03_band.html">能带/态密度</a></li>
 <li class="toctree-l2"><a class="reference internal" href="1.04_charge.html">电荷/静电势</a></li>
@@ -75,9 +82,10 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">VASP View</li>
+          <li class="breadcrumb-item"><a href="index.html">VASP View</a></li>
+      <li class="breadcrumb-item active">结构设置</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/vaspview/index.rst.txt" rel="nofollow"> 查看页面源码</a>
+            <a href="../_sources/vaspview/1.01_structure.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -85,42 +93,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="vasp-view">
-<h1>VASP View<a class="headerlink" href="#vasp-view" title="Link to this heading"></a></h1>
-<p>下载地址：</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="1.01_structure.html">结构设置</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html#id2">创建结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html#id3">导入结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html#id4">调整结构</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html#id5">结构输出</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html#id6">批量转换</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1.02_optimization.html">优化结果</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1.03_band.html">能带/态密度</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1.03_band.html#id2">能带</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.03_band.html#id3">态密度</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1.04_charge.html">电荷/静电势</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="1.04_charge.html#id2">电荷</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.04_charge.html#id3">静电势</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="1.05_optics.html">光学性质</a></li>
-<li class="toctree-l1"><a class="reference internal" href="1.06_dynamics.html">动力学结果</a></li>
-</ul>
-</div>
+  <section id="id1">
+<h1>结构设置<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<section id="id2">
+<h2>创建结构<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>可根据晶体名称，
+通过预设数据集里导入晶体数据，
+也可直接根据堆积方式与晶胞参数，
+创建晶体。</p>
+</section>
+<section id="id3">
+<h2>导入结构<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<p>可直接导入晶体结构文件数据，
+支持格式有.cif，POSCAR，OUTCAR，.xsd，.xyz，.cell。</p>
+</section>
+<section id="id4">
+<h2>调整结构<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>可对创建或导入的晶体结构进行超胞，
+固定原子，随机取代的调整。</p>
+</section>
+<section id="id5">
+<h2>结构输出<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p>可调用jmol可视化程序中的结构，
+也可将结构保存为想要的格式，
+支持格式有POSCAR，.cif，.dat。</p>
+</section>
+<section id="id6">
+<h2>批量转换<a class="headerlink" href="#id6" title="Link to this heading"></a></h2>
+<p>可实现批量文件格式转换，
+支持的输入格式有.cif，POSCAR，.xsd，
+支持的输出格式有POSCAR，.cif。</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="../index.html" class="btn btn-neutral float-left" title="华算科研工具箱使用文档" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="1.01_structure.html" class="btn btn-neutral float-right" title="结构设置" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="index.html" class="btn btn-neutral float-left" title="VASP View" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
+        <a href="1.02_optimization.html" class="btn btn-neutral float-right" title="优化结果" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

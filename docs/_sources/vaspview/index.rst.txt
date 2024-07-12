@@ -7,4 +7,10 @@ VASP View
 .. toctree::
    :maxdepth: 2
 
-   1.01_build
+   1.01_structure
+   1.02_optimization
+   1.03_band
+   1.04_charge
+   1.05_optics
+   1.06_dynamics
+   
