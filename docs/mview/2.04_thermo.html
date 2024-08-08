@@ -51,7 +51,13 @@
 <li class="toctree-l2"><a class="reference internal" href="2.01_molecule.html">分子结构</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2.02_info.html">分子信息</a></li>
 <li class="toctree-l2"><a class="reference internal" href="2.03_opt.html">优化结果</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">热力学</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">热力学</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">原理</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">频率校正因子</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id4">温度与压强</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">光谱显示</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../mptool/index.html">CIF Tool</a></li>
@@ -88,6 +94,26 @@
 <h1>热力学<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <p>如果导入的计算结果文件包含频率分析结果，
 MView可以帮助查看频率与热力学相关数据。</p>
+<section id="id2">
+<h2>原理<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
+<p>待补充。</p>
+</section>
+<section id="id3">
+<h2>频率校正因子<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
+<div class="line-block">
+<div class="line">在概览部分可输入校正因子计算校正后的频率数值与热力学数据。</div>
+<div class="line">如果导入的是Gaussian输出文件，MView会尝试根据方法与基组自动匹配相应的校正因子。</div>
+<div class="line">程序中使用的校正因子数据来源于CCCBDB，如匹配成功，输入框内默认会显示该校正因子的数值，如匹配失败，则不会自动进行校正，输入框将显示1.0。</div>
+</div>
+</section>
+<section id="id4">
+<h2>温度与压强<a class="headerlink" href="#id4" title="Link to this heading"></a></h2>
+<p>在概览部分可手动输入温度与压强数值计算对应条件下的热力学数据。</p>
+</section>
+<section id="id5">
+<h2>光谱显示<a class="headerlink" href="#id5" title="Link to this heading"></a></h2>
+<p>MView可根据分子在各振动频率下的红外强度与拉曼活性，绘制出分子的红外光谱图与拉曼光谱图。</p>
+</section>
 </section>
 
 
