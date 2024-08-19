@@ -4,6 +4,8 @@ VASP View
 
 下载地址：
 
+VASP View是用于晶体结构构建、调整以及DFT计算结果分析的软件。
+
 .. toctree::
    :maxdepth: 2
 

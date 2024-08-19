@@ -1,0 +1,43 @@
+========
+代码报错
+========
+
+机器学习相关课程中常见代码报错及解决方案，不定期更新，如有未提及问题请在课程群提问。
+
+代码报错在课程群提问时请附上报错的jupyter文件。
+
+| Q：原来能运行，然后突然不能运行了
+| A：cell --> restart and run all重新运行一遍
+
+| Q：AttributeError: 'Series' object has no attribute 'to_numpy'
+| A：把代码中.to_numpy()改成.values
+
+| Q：ImportError: cannot import xxxx from xxxx
+| A：检查拼写，更新版本
+
+| Q：ModuleNotFoundError: No module named 'pymatgen.util.graph_hashing'
+| A：更新pymatgen和matminer到最新版本
+
+| Q：ModuleNotFoundError: No module named xxxx
+| A：缺库，确认已安装xxxx库，如已安装，确认拼写是否有误，确认环境是否正确
+
+| Q：MPRestError:HTTPSConnectionPool(host='api.materialsproject.org', port=443)
+| A：MP官网连不上，吃个饭回来再试
+
+| Q：NameError: name xxxx is not defined
+| A：检查拼写，检查前面定义xxxx处的代码块是否已运行
+
+| Q：ValueError: Unexpected atomic number Z=119
+| A：更新pymatgen库
+
+| Q：ValueError: Unknown label type: continuous.
+| A：分类器用于回归，import处把classifier改成regressor
+
+| Q：ValueError: Unrecognized dataset name: xxxx
+| A：确认拼写无误，确认.json.gz文件与jupyter文件在同级文件夹，.json.gz文件不需要解压
+
+| Q：出现粉红色warning
+| A：无视
+
+| Q：结果出现nan
+| A：检查输入数据

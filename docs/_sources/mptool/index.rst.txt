@@ -4,6 +4,9 @@ CIF Tool
 
 下载地址：
 
+简介
+====
+
 CIF全称为Crystallographic Information File，是一种用于表示
 晶体信息的标准文本文件格式。该格式由国际晶体学联合会（IUCr）
 开发，许多用于分子显示的计算机程序都与此格式兼容，例如
@@ -14,11 +17,13 @@ Materials Project是用于下载晶体CIF的常用数据库。
 CIF Tool可以通过筛选搜索获取Materials Project中的结构数据，
 并可一键保存搜索得到的结构对应的CIF。
 
-软件界面：
+软件界面
+========
 
 .. image:: ../media/CIFTool_s.png
 
-使用方法：
+使用方法
+========
 
 1. 在Materials Project官网注册账号  
 2. 在软件API Key处填写官网获取的API Key  

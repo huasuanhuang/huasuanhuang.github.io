@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>能带/态密度 &mdash; 华算工具箱 0.1.0 文档</title>
+  <title>代码报错 &mdash; 华算工具箱 0.1.0 文档</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
 
@@ -22,8 +22,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="搜索" href="../search.html" />
-    <link rel="next" title="电荷/静电势" href="1.04_charge.html" />
-    <link rel="prev" title="优化结果" href="1.02_optimization.html" /> 
+    <link rel="prev" title="软件问题" href="6.02_software.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -46,24 +45,17 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="导航菜单">
               <ul class="current">
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">VASP View</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="1.01_structure.html">结构设置</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.02_optimization.html">优化结果</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">能带/态密度</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id2">能带</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id3">态密度</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="1.04_charge.html">电荷/静电势</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.05_optics.html">光学性质</a></li>
-<li class="toctree-l2"><a class="reference internal" href="1.06_dynamics.html">动力学结果</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="../vaspview/index.html">VASP View</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mview/index.html">MView</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../mptool/index.html">CIF Tool</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../n2p2tool/index.html">n2p2 Tool</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../web/index.html">网页版工具</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../machine_learning/index.html">机器学习课程</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">机器学习课程</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="6.01_pre_course.html">课前咨询</a></li>
+<li class="toctree-l2"><a class="reference internal" href="6.02_software.html">软件问题</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">代码报错</a></li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -80,10 +72,10 @@
           <div role="navigation" aria-label="页面导航">
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
-          <li class="breadcrumb-item"><a href="index.html">VASP View</a></li>
-      <li class="breadcrumb-item active">能带/态密度</li>
+          <li class="breadcrumb-item"><a href="index.html">机器学习课程</a></li>
+      <li class="breadcrumb-item active">代码报错</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="../_sources/vaspview/1.03_band.rst.txt" rel="nofollow"> 查看页面源码</a>
+            <a href="../_sources/machine_learning/6.03_error.rst.txt" rel="nofollow"> 查看页面源码</a>
       </li>
   </ul>
   <hr/>
@@ -92,27 +84,64 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>能带/态密度<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
-<section id="id2">
-<h2>能带<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
-<p>可读取VASP计算能带所得OUTCAR文件，
-查看能带结果，k点距离，带隙数据信息。</p>
-</section>
-<section id="id3">
-<h2>态密度<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
-<p>可读取VASP计算态密度所得DOSCAR文件，
-查看态密度，分波态密度结果，
-可按轨道、原子编号查看，
-可对态密度进行平滑处理。</p>
-</section>
+<h1>代码报错<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
+<p>机器学习相关课程中常见代码报错及解决方案，不定期更新，如有未提及问题请在课程群提问。</p>
+<p>代码报错在课程群提问时请附上报错的jupyter文件。</p>
+<div class="line-block">
+<div class="line">Q：原来能运行，然后突然不能运行了</div>
+<div class="line">A：cell –&gt; restart and run all重新运行一遍</div>
+</div>
+<div class="line-block">
+<div class="line">Q：AttributeError: ‘Series’ object has no attribute ‘to_numpy’</div>
+<div class="line">A：把代码中.to_numpy()改成.values</div>
+</div>
+<div class="line-block">
+<div class="line">Q：ImportError: cannot import xxxx from xxxx</div>
+<div class="line">A：检查拼写，更新版本</div>
+</div>
+<div class="line-block">
+<div class="line">Q：ModuleNotFoundError: No module named ‘pymatgen.util.graph_hashing’</div>
+<div class="line">A：更新pymatgen和matminer到最新版本</div>
+</div>
+<div class="line-block">
+<div class="line">Q：ModuleNotFoundError: No module named xxxx</div>
+<div class="line">A：缺库，确认已安装xxxx库，如已安装，确认拼写是否有误，确认环境是否正确</div>
+</div>
+<div class="line-block">
+<div class="line">Q：MPRestError:HTTPSConnectionPool(host=’api.materialsproject.org’, port=443)</div>
+<div class="line">A：MP官网连不上，吃个饭回来再试</div>
+</div>
+<div class="line-block">
+<div class="line">Q：NameError: name xxxx is not defined</div>
+<div class="line">A：检查拼写，检查前面定义xxxx处的代码块是否已运行</div>
+</div>
+<div class="line-block">
+<div class="line">Q：ValueError: Unexpected atomic number Z=119</div>
+<div class="line">A：更新pymatgen库</div>
+</div>
+<div class="line-block">
+<div class="line">Q：ValueError: Unknown label type: continuous.</div>
+<div class="line">A：分类器用于回归，import处把classifier改成regressor</div>
+</div>
+<div class="line-block">
+<div class="line">Q：ValueError: Unrecognized dataset name: xxxx</div>
+<div class="line">A：确认拼写无误，确认.json.gz文件与jupyter文件在同级文件夹，.json.gz文件不需要解压</div>
+</div>
+<div class="line-block">
+<div class="line">Q：出现粉红色warning</div>
+<div class="line">A：无视</div>
+</div>
+<div class="line-block">
+<div class="line">Q：结果出现nan</div>
+<div class="line">A：检查输入数据</div>
+</div>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="页脚">
-        <a href="1.02_optimization.html" class="btn btn-neutral float-left" title="优化结果" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
-        <a href="1.04_charge.html" class="btn btn-neutral float-right" title="电荷/静电势" accesskey="n" rel="next">下一页 <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="6.02_software.html" class="btn btn-neutral float-left" title="软件问题" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> 上一页</a>
     </div>
 
   <hr/>

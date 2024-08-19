@@ -13,6 +13,7 @@
    mptool/index
    n2p2tool/index
    web/index
+   machine_learning/index
 
 * :ref:`genindex`
 * :ref:`modindex`

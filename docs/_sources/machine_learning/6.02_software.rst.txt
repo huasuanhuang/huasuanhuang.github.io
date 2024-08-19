@@ -1,0 +1,68 @@
+========
+软件问题
+========
+
+机器学习相关课程中软件安装过程常见问题及解决方案，不定期更新，如有未提及问题请在课程群提问。
+
+Anaconda
+========
+
+| Q：要安哪个版本
+| A：最新版
+
+| Q：在哪下载
+| A：https://www.anaconda.com/download/success
+
+| Q：装了Anaconda还需要装Python和Jupyter吗
+| A：不需要，Anaconda包含Python和Jupyter
+
+| Q：Mac系统/Linux系统
+| A：无影响
+
+| Q：装了后界面和老师课程界面不完全一样
+| A：新旧版差异，不影响使用
+
+| Q：装过旧的版本
+| A：先卸掉
+
+| Q：装完了打不开
+| A：重启，重装，实在不行换个电脑
+
+| Q：不喜欢Anaconda，想用其它Python的IDE
+| A：可以
+
+Python库
+========
+
+| Q：等很久，然后一大堆红色报错，最后显示ReadimeoutError: HTTPSConnectionPool
+| A：使用清华pypi镜像源安装，参考 https://mirrors.tuna.tsinghua.edu.cn/help/pypi
+
+| Q：xxxx is not a supported wheel on this platform
+| A：使用清华pypi镜像源安装，参考 https://mirrors.tuna.tsinghua.edu.cn/help/pypi
+
+| Q：Error: No matching distribution found for xxxx
+| A：xxxx拼写错误
+
+| Q：怎么更新库
+| A：pip install 改为 pip install -U
+
+| Q：怎么指定安装库的版本
+| A：库名称后加 ==版本号
+
+| Q：怎么使用管理员权限安装库
+| A：pip install 改为 pip install --user
+
+| Q：怎么确认库安装成功
+| A：能直接在jupyter中导入使用即可，亦可使用pip list或pip show xxxx查看
+
+| Q：matplotlib库资料
+| A：https://matplotlib.org
+
+| Q：scikit-learn库资料
+| A：https://scikit-learn.org/stable
+
+VASP6/n2p2/LAMMPS
+=================
+
+| 课程学习中不需要自己安装。
+| 这些软件通常安装需在服务器/超算进行，因不同服务器编译环境差异较大，如需自行安装建议联系服务器管理员协助。
