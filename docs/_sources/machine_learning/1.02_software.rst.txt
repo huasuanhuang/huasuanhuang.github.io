@@ -34,6 +34,9 @@ Anaconda
 Python库
 ========
 
+| Q：Python库怎么安装
+| A：pip install 库名称
+
 | Q：等很久，然后一大堆红色报错，最后显示ReadimeoutError: HTTPSConnectionPool
 | A：使用清华pypi镜像源安装，参考 https://mirrors.tuna.tsinghua.edu.cn/help/pypi
 
@@ -44,16 +47,16 @@ Python库
 | A：xxxx拼写错误
 
 | Q：怎么更新库
-| A：pip install 改为 pip install -U
+| A：pip install 库名称 改为 pip install -U 库名称
 
 | Q：怎么指定安装库的版本
-| A：库名称后加 ==版本号
+| A：pip install 库名称==版本号
 
 | Q：怎么使用管理员权限安装库
-| A：pip install 改为 pip install --user
+| A：pip install --user 库名称
 
 | Q：怎么确认库安装成功
-| A：能直接在jupyter中导入使用即可，亦可使用pip list或pip show xxxx查看
+| A：能直接在jupyter中导入使用即可，亦可使用pip list或pip show 库名称 查看
 
 | Q：matplotlib库资料
 | A：https://matplotlib.org

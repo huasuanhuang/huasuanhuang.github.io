@@ -7,7 +7,7 @@
 .. toctree::
    :maxdepth: 2
 
-   6.01_pre_course
-   6.02_software
-   6.03_error
+   1.01_pre_course
+   1.02_software
+   1.03_error
    
