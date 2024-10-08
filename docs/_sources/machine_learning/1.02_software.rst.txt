@@ -64,6 +64,15 @@ Python库
 | Q：scikit-learn库资料
 | A：https://scikit-learn.org/stable
 
+MongoDB
+========
+
+| Q：下载时看不到老师用的7.0.8版本
+| A：MongoDB更新时只保留了最新的大版本，可直接选择最新版本
+
+| Q：新版MongoDB左边没有Database选项
+| A：布局略有区别，可参考官方文档https://www.mongodb.com/zh-cn/docs/compass/current/databases
+
 VASP6/n2p2/LAMMPS
 =================
 

@@ -12,6 +12,9 @@
 | Q：AttributeError: 'Series' object has no attribute 'to_numpy'
 | A：把代码中.to_numpy()改成.values
 
+| Q：AttributeError: module 'numpy' has no attribute 'float'
+| A：更新sklearn模块
+
 | Q：ImportError: cannot import xxxx from xxxx
 | A：检查拼写，更新版本
 
