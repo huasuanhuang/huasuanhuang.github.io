@@ -35,7 +35,7 @@ Python库
 ========
 
 | Q：Python库怎么安装
-| A：pip install 库名称
+| A：打开Anaconda Powershell Promt，输pip install 库名称
 
 | Q：等很久，然后一大堆红色报错，最后显示ReadimeoutError: HTTPSConnectionPool
 | A：使用清华pypi镜像源安装，参考 https://mirrors.tuna.tsinghua.edu.cn/help/pypi
@@ -45,6 +45,9 @@ Python库
 
 | Q：Error: No matching distribution found for xxxx
 | A：xxxx拼写错误
+
+| Q：安装pymatgen报错，Error：Could not build wheels for pymatgen, which is required to install pyproject.toml-based projects
+| A：使用3.10-3.12版本的Python安装该库
 
 | Q：怎么更新库
 | A：pip install 库名称 改为 pip install -U 库名称

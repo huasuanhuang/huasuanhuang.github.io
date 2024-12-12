@@ -3,7 +3,9 @@
 ========
 
 | Q：想了解机器学习在xx领域怎么用
-| A：看文献，看B站华算黄老师视频，看华算公众号推文，或学习机器学习基础后类推
+| A：参考B站华算黄老师视频
+| https://www.bilibili.com/video/BV1M14y1k7AJ/?spm_id_from=333.999.0.0&vd_source=ee93ac339e6f186d7ff30f84388f2966
+| https://www.bilibili.com/video/BV1u94y1z73j/?spm_id_from=333.999.0.0&vd_source=ee93ac339e6f186d7ff30f84388f2966
 
 | Q：想DFT+机器学习
 | A：会DFT，报机器学习基础，不会DFT，加报一门DFT基础课程
